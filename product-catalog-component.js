@@ -14,7 +14,7 @@ async function downloadXml(type) {
   const apiUrl = type === "bell"
     ? "https://bell-device-products.onrender.com/list"
     : "https://virgin-device-products.onrender.com/list";
-  const fileName = type === "bell" ? "bell-products.xml" : "virgin-products.xml";
+  const fileName = type === "bell" ? "bell-devices.xml" : "virgin-devices.xml";
 
   const originalText = btn.textContent;
   btn.disabled = true;

@@ -119,9 +119,11 @@ function getCategoryName(source, type) {
     if (name.includes("apple") || name.includes("ipad") || name.includes("iphone")) return "Apple";
     if (name.includes("samsung")) return "Samsung";
     if (name.includes("google")) return "Google";
-    if (name.includes("motorola")) return "Motorola";
+    if (name.includes("motorola") || name.includes("moto")) return "Motorola";
     if (name.includes("tcl")) return "TCL";
     if (name.includes("huawei")) return "Huawei";
+    if (name.includes("ahlo")) return "Ahlo";
+    if (name.includes("zte")) return "ZTE";
     return "Uncategorized";
 }
 </script>

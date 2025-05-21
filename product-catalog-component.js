@@ -57,6 +57,16 @@ async function downloadXml(type) {
       <title>Huawei</title>
       <external_update_time>2017-07-24T12:00:00</external_update_time>
     </item>
+    <item xsi:type="product_category">
+      <id>Ahlo</id>
+      <title>Ahlo</title>
+      <external_update_time>2017-07-24T12:00:00</external_update_time>
+    </item>
+    <item xsi:type="product_category">
+      <id>ZTE</id>
+      <title>ZTE</title>
+      <external_update_time>2017-07-24T12:00:00</external_update_time>
+    </item>
   </product_categories>`;
 
     const xmlHeader = `<?xml version="1.0" encoding="UTF-8"?>\n<productCatalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">`;

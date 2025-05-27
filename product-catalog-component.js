@@ -73,6 +73,7 @@ async function downloadXml(type) {
 
     const xmlItems = products.map(product => {
       const name = escapeXml(product.name);
+      const desc = escapeXml(product.desc);
       const id = escapeXml(product.name);
       const product_url = escapeXml(product.link);
       const image_url = escapeXml(product.img?.startsWith('/') ? `https://www.bell.ca${product.img}` : product.img);
@@ -91,8 +92,8 @@ async function downloadXml(type) {
           </item>
         </items>
       </product_categories>
-      <description>${name}</description>
-      <external_update_time>$${new Date().toISOString()}</external_update_time>
+      <description>${desc}</description>
+      <external_update_time>${new Date().toISOString()}</external_update_time>
     </item>`;
     }).join("\n");
 
